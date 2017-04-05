@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ShoppingItem" representedClassName="ShoppingItem" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="store" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Store" inverseName="shoppingItem" inverseEntity="Store" syncable="YES"/>
+        <relationship name="webService" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WebService" inverseName="shoppingItem" inverseEntity="WebService" syncable="YES"/>
+    </entity>
+    <entity name="Store" representedClassName="Store" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="shoppingItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ShoppingItem" inverseName="store" inverseEntity="ShoppingItem" syncable="YES"/>
+    </entity>
+    <entity name="WebService" representedClassName="WebService" syncable="YES">
+        <attribute name="domain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="shoppingItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ShoppingItem" inverseName="webService" inverseEntity="ShoppingItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ShoppingItem" positionX="106" positionY="-180" width="128" height="103"/>
+        <element name="WebService" positionX="-54" positionY="18" width="128" height="103"/>
+        <element name="Store" positionX="151" positionY="36" width="128" height="88"/>
+    </elements>
+</model>

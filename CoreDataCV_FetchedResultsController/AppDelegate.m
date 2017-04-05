@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "DataController.h"
+#import "ShoppingListCVC.h"
+
 
 @interface AppDelegate ()
 
@@ -16,8 +19,39 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self registerNotifications];
+    DataController *dataController = [[DataController alloc] init];
+    [self registerController:dataController forKey:@"DataController"];
+    
     return YES;
+}
+
+- (void)registerNotifications {
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(setupRootVC)
+     name:@"LoadRootVC"
+     object:nil];
+}
+
+- (void)setupRootVC {
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]
+                                          init];
+    layout.itemSize = CGSizeMake(150, 210);
+    layout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
+    layout.minimumLineSpacing = 20.0f;
+    ShoppingListCVC *shoppingListCVC = [[ShoppingListCVC alloc]
+                                        initWithCollectionViewLayout:layout];
+    UINavigationController *nav = [[UINavigationController alloc]
+                                   initWithRootViewController:shoppingListCVC];
+    self.window.rootViewController = nav;
+}
+
+- (void)registerController:(id)controller forKey:(NSString *)key {
+    if (self.allViewControllers == nil) {
+        self.allViewControllers = [[NSMutableDictionary alloc] init];
+    }
+    self.allViewControllers[key] = controller;
 }
 
 

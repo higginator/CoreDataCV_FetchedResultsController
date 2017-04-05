@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "332509D31E955BEF000711AE"
+               BuildableName = "CoreDataCV_FetchedResultsController.app"
+               BlueprintName = "CoreDataCV_FetchedResultsController"
+               ReferencedContainer = "container:CoreDataCV_FetchedResultsController.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "332509EC1E955BF0000711AE"
+               BuildableName = "CoreDataCV_FetchedResultsControllerTests.xctest"
+               BlueprintName = "CoreDataCV_FetchedResultsControllerTests"
+               ReferencedContainer = "container:CoreDataCV_FetchedResultsController.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "332509F71E955BF0000711AE"
+               BuildableName = "CoreDataCV_FetchedResultsControllerUITests.xctest"
+               BlueprintName = "CoreDataCV_FetchedResultsControllerUITests"
+               ReferencedContainer = "container:CoreDataCV_FetchedResultsController.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "332509D31E955BEF000711AE"
+            BuildableName = "CoreDataCV_FetchedResultsController.app"
+            BlueprintName = "CoreDataCV_FetchedResultsController"
+            ReferencedContainer = "container:CoreDataCV_FetchedResultsController.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "332509D31E955BEF000711AE"
+            BuildableName = "CoreDataCV_FetchedResultsController.app"
+            BlueprintName = "CoreDataCV_FetchedResultsController"
+            ReferencedContainer = "container:CoreDataCV_FetchedResultsController.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "332509D31E955BEF000711AE"
+            BuildableName = "CoreDataCV_FetchedResultsController.app"
+            BlueprintName = "CoreDataCV_FetchedResultsController"
+            ReferencedContainer = "container:CoreDataCV_FetchedResultsController.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

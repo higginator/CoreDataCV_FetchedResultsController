@@ -11,7 +11,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) NSMutableDictionary *allViewControllers;
 
+- (void)registerController:(id)controller forKey:(NSString *)key;
 
 @end
 
